@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMarket Ethiopia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 AutoMarket Ethiopia</h1>
+    <p>Buy & Sell Cars and Car Parts Easily</p>
+  </header>
+
+  <section class="form-section">
+    <h2>Post Your Listing</h2>
+    <form id="postForm">
+      <select name="category" required>
+        <option value="car">Car for Sale</option>
+        <option value="part">Car Part</option>
+      </select>
+      <input name="title" placeholder="Title (e.g., Toyota Corolla 2010)" required>
+      <input name="model" placeholder="Model (e.g., Corolla, Vitz)" required>
+      <input name="price" placeholder="Price (e.g., 450,000 ETB)" required>
+      <input name="location" placeholder="Location (e.g., Addis Ababa)" required>
+      <input name="phone" placeholder="WhatsApp Number (e.g., 2519xxxxxxx)" required>
+      <input name="photo" placeholder="Image URL (paste Imgur or Drive link)" required>
+      <textarea name="desc" placeholder="Short description / condition"></textarea>
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+  </section>
+
+  <section class="filters">
+    <button id="filterAll">All</button>
+    <button id="filterCars">Cars</button>
+    <button id="filterParts">Parts</button>
+  </section>
+
+  <section
